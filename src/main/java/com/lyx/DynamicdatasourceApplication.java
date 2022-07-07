@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @MapperScan("com.lyx.dao")
+@EnableTransactionManagement
 public class DynamicdatasourceApplication {
 
     public static void main(String[] args) {

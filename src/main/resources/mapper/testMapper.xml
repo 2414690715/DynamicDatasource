@@ -3,6 +3,12 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lyx.dao.TestDao">
+    <insert id="testTransational">
+        insert into db(db) values (#{v})
+    </insert>
+    <update id="testUpdate">
+        update db set db = #{v} where db = #{t}
+    </update>
     <select id="testDynamicDataSource" resultType="java.lang.String">
         select db from db;
     </select>
