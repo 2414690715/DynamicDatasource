@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    master:
+      username: root
+      password: 200265
+      jdbcUrl: jdbc:mysql://localhost:3306/dd1
+      driverClassName: com.mysql.jdbc.Driver
+    slave:
+      username: root
+      password: 200265
+      jdbcUrl: jdbc:mysql://localhost:3306/dd2
+      driverClassName: com.mysql.jdbc.Driver
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml
